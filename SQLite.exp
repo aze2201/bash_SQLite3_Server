@@ -1,0 +1,11 @@
+#!/usr/bin/expect -f
+
+spawn sqlite3 example.db
+
+set timeout 10
+expect {"sqlite>" send {send "ATTACH DATABASE 'file::memory:?cache=shared' AS mem;"}}
+expect {
+    "sqlite> " {
+        interact -o "\r" exp_continue
+    }
+}
