@@ -8,5 +8,5 @@ put this script to any folder where you want to create SQLite database and execu
 nc -l -p 6667 -e ./expect.exp -k
 
 # Client Side
-telnet <remote ip> 6667
+telnet ServerIP 6667
 
