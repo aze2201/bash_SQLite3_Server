@@ -1,4 +1,4 @@
-# bash_SQLite3_Server
+# SQLite3 embed database over TCP (no auth)
 SQLite Server over TCP
 
 Put this script to any folder where you want to create SQLite database and execute below command.
